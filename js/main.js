@@ -7,10 +7,14 @@ let dataID;
 let isEditing = false;
 
 create.addEventListener("click", () => {
-  data.push(input.value);
-  input.value = "";
-  isEditing = false;
-  todo();
+  if (input.value) {
+    data.push(input.value);
+    input.value = "";
+    isEditing = false;
+    todo();
+  } else {
+    list.innerHTML = `<li> Please enter a value </li>`;
+  }
 });
 
 update.addEventListener("click", () => {
