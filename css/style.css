@@ -1,0 +1,29 @@
+.todo_main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  height: 600px;
+  width: 600px;
+  background-color: bisque;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+input {
+  height: 50px;
+  width: 200px;
+}
+button {
+  height: 50px;
+  width: 100px;
+}
+.update_btn {
+  display: none;
+}
+.form {
+  display: flex;
+  gap: 16px;
+}

@@ -18,6 +18,8 @@ update.addEventListener("click", () => {
   input.value = "";
   isEditing = false;
   todo();
+  update.style.display = "none";
+  create.style.display = "block";
 });
 
 input.addEventListener("keydown", function (event) {
@@ -53,6 +55,8 @@ function todo() {
         dataID = id;
         isEditing = true;
         todo();
+        create.style.display = "none";
+        update.style.display = "block";
       });
     });
   });
